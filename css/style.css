@@ -1,0 +1,282 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #fff;
+    color: #000;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #2980b9; 
+}
+
+header img {
+    max-width: 100px;
+    height: auto;
+}
+h2{
+    color: #1b305e;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: auto;
+}
+
+.container {
+    display: flex;
+    margin-bottom: 400px;
+}
+
+.categories {
+    margin: 1em;
+    background-color: #1b305e;
+    color: #fff;
+    padding: 1em;
+    width: 20%; /* Sol menü genişliği */
+}
+
+.categories p {
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-select {
+    margin-left: 8px;
+    padding: 8px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    color: #fff;
+    margin-top:15px;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #1b305e;
+    transition: background-color 0.3s ease;
+    border-bottom: 1px solid #ddd;
+}
+
+li:hover {
+    background-color: #dbdbdb3a;
+}
+
+#contentContainer {
+    width: 80%; /* Sağ içerik genişliği */
+    padding: 20px;
+}
+
+#contentPlaceholder {
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    height: 100%; /* İçeriği yüksekliği kaplasın */
+}
+
+.icon {
+    margin: 0 10px;
+    transition: color 0.3s;
+    font-size: 25px;
+    color: #9c9c9c;
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #fff;
+    background-color: #3498db;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.7);
+}
+
+i{
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+/* footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.1em;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
+
+
+
+
+
+/* ogretimseklisubeGuncelle -Öğretim Şekli/Şube Tipi Güncelle */
+
+#teachingForm {
+    max-width: 400px; /* Formun genişliğini ayarlayın */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ögrenci Formu */
+
+
+#studentForm {
+    margin-top: 50px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+h3{
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #1b305e;
+    color: #fff;
+    padding: 20px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="submit"] {
+    background-color: #1b305e;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Şube İşlemleri - Şube ekle */
+
+/* Sınıf ve Şube Girişi Stili */
+h4 {
+    margin-top: 20px;
+}
+
+
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+/* Şube Durumu Stili */
+#durum {
+    width: calc(100% - 18px);
+}
+
+/* Buton Stili */
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+
+
+
+/* Tablo Stili */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Tablo Başlığı Stili */
+thead {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Tablo Hücreleri Stili */
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Sıra Değişiminde Arka Plan Rengi */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2a2;
+}
+
+/* Hücrelerin İçeriğini Ortala */
+td {
+    text-align: center;
+}
+
+/* Tablo Hücrelerine Hover Etkisi */
+tbody tr:hover {
+    background-color: #8e8e8e;
+}
