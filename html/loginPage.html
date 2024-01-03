@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="login-container">
+        <h2>e-Okul Giriş</h2>
+        <div id="randomNumbers"></div>
+        <form onsubmit="return checkLogin()">
+            <div class="form-group">
+                <label for="randomInput">Rakamlar:</label>
+                <input type="text" id="randomInput" name="randomInput" required placeholder="Lütfen yukardaki rakamları giriniz">
+            </div>
+            <div class="form-group">
+                <label for="username">Kullanıcı Adı:</label>
+                <input type="text" id="username" name="username" required placeholder="Okul numaranızı giriniz">
+            </div>
+            <div class="form-group">
+                <label for="password">Şifre:</label>
+                <input type="password" id="password" name="password" required placeholder="Şifrenizi giriniz">
+            </div>
+            <button type="submit" class="login-button">Giriş Yap</button>
+        </form>
+        <p class="bilgi">* Tüm özel okul kullanıcılarından Sisteme Giriş yapamayan kullanıcının tanımlı olduğu T.C. Kimlik numarasının "MEBBİS Özel Öğretim Kurumları Modülü / Personel Arama" ekranı üzerinden Çalışma izninin kontrol edilmesi gerekmektedir.
+            Özel Okul Kurum kodlu kullanıcıların tanımlı olduğu T.C. Kimlik numarası değişecek ise İl/İlçe Mebbis Sorumlunuza başvurunuz.
+            Çalışma izni biten Özel Okul kullanıcıları sisteme giriş yapamazlar</p>
+        <script src="../js/login.js"></script>
+    </div>
+</body>
+</html>
